@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Projects and Services | ReviveMii</title>
+  <link rel="stylesheet" href="/css/1.css">
+  <meta name="description" content="Services and Projects by the ReviveMii Project">
+</head>
+<body>
+  <header>    <div class="logo-container">
+      <a href="index.html" class="logo" style="text-decoration: none">
+        <img src="favicon.ico" alt="ReviveMii Logo" class="logo-img" style="text-decoration: none">
+        <span>ReviveMii</span>
+      </a>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <section class="projects-hero">
+    <div class="container">
+      <h1>Our Featured Projects and Services</h1>
+      <p>ReviveMii Projects</p>
+    </div>
+  </section>
+<div id="cookiePopup" style="position: fixed; bottom: 0; left: 0; right: 0; background-color: #333; color: white; padding: 15px; text-align: center; font-size: 16px; z-index: 1000; display: none;">
+    This website uses cookies. <a href="/wc.html" style="color: blue; text-decoration: underline">What Cookies</a> 
+    <button onclick="acceptCookies()" style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; cursor: pointer; font-size: 14px; margin-left: 20px;">Accept</button>
+</div>
+
+<script>
+    if (!localStorage.getItem('cookiesAccepted')) {
+        document.getElementById('cookiePopup').style.display = 'block';
+    }
+
+    function acceptCookies() {
+        localStorage.setItem('cookiesAccepted', 'true');
+        document.getElementById('cookiePopup').style.display = 'none';
+    }
+</script>
+  <section class="projects-list">
+    <div class="container">
+      <div class="project-card">
+        <img src="/revivetube.png" alt="ReviveTube">
+        <div class="card-content">
+          <h3>ReviveTube</h3>
+          <p>Watch YouTube Videos on your Wii</p>
+          <a href="/revivetube" class="btn">Learn More</a>
+        </div>
+      </div>
+<br>
+<br>
+<div class="project-card">
+<img src="/imageshare.jpg" alt="imageshare">
+<div class="card-content">
+<h3>ReviveMii Image Transfer</h3>
+<p>Revival for the Nintendo Image Share Feature on 3ds and Wii U</p>
+<a href="/imageshare" class="btn">Learn More</a>
+</div>
+</div>
+<br>
+<br>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 ReviveMii</p>
+    <p><a href="/index.html#end">More Links in Home Footer</a><p>
+    <p><a href="contact.html">Contact Us</a></p>
+    <p><a href="/discord-redirect.html">Join Discord</a></p>
+    <p><a href="https://github.com/ReviveMii/">GitHub</a></p>
+    <p><a href="https://youtube.com/@ReviveMii-Project">YouTube</a></p>
+  </footer>
+
+</body>
+</html>
+

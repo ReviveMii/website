@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReviveMii Image Share | ReviveMii</title>
+  <link rel="stylesheet" href="/css/1.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <meta name="description" content="Use the Nintendo Image Share again!">
+</head>
+<body>
+  <header>
+<div class="logo-container">
+      <a href="index.html" class="logo" style="text-decoration: none">
+        <img src="/favicon.ico" alt="ReviveMii Logo" class="logo-img" style="text-decoration: none">
+        <span>ReviveMii</span>
+      </a>
+    </div>    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/projects.html">Projects</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </header>
+<br>
+
+<br>
+<br>
+<br>
+</script>
+  <div id="popup" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background:white; padding:20px; border:2px solid #333; box-shadow:0 4px 8px rgba(0,0,0,0.1); z-index:1000; width:80%; max-width:500px;">
+  <h2>ReviveMii Image Share</h2>
+  <p>The ReviveMii Image Share is no longer being developed. Please use <a href="http://i.retrosite.org" style="color: blue">i.retrosite.org</a> or <a href="http://theimageshare.com" style="color: blue">theimageshare.com</a>.</p>
+  <button onclick="closePopup()" style="background-color:#f44336; color:white; border:none; padding:5px 10px; cursor:pointer;">Close</button>
+</div>
+<div id="overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:999;"></div>
+
+<script>
+  window.onload = function() {
+    setTimeout(function() {
+      document.getElementById('popup').style.display = 'block';
+      document.getElementById('overlay').style.display = 'block';
+    }, 1000);
+  };
+
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
+  }
+</script>
+  <section class="project-hero" id="p">
+    <div class="container">
+      <h1>ReviveMii Image Transfer</h1>
+      <p>A Revival for the Nintendo Image Share on 3ds and Wii U</p>
+      <button class="cta" onclick="location.href='#p'">Learn More</button>
+    </div>
+  </section>
+
+  <section class="project-details">
+    <div class="container">
+      <div class="project-description">
+        <h2>About the Project</h2>
+        <p>Upload Photos from your 3DS or Wii U and transfer it to your Computer!</p>
+      </div>
+
+      <div class="project-features">
+        <h2>How to use</h2>
+        <ul>
+<p>Requirements</p>
+<li>• Wii U or 3DS</li>
+<li>• An Internet Connection</li>
+<li>• Computer or Smartphone</li>
+</ul><br>
+<ul>
+<li>• 1. Go to http://imageshare.d.errexe.xyz on your 3ds or Wii U (with http://)</li>
+<li>• 2. Upload an Image</li>
+<li>• 3. Scan the QR Code with your Smart Phone or type the URL in your Computer</li>
+<li>• 4. Download it</li>
+</ul>
+<h1 style="color: green">You now successfully transferred an Image from your Wii U/3DS to your Device!</h1>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>© 2024 ReviveMii.</p>
+<p><a href="/index.html#end">More Links in Home Footer</a><p>
+    <p><a href="/contact.html">Contact Us</a></p>  <p><a href="/feedback.html">Feedback</a></p>
+    <p><a href="/discord-redirect.html">Join Discord</a></p>
+    <p><a href="https://github.com/ReviveMii/">GitHub</a></p>
+    <p><a href="https://youtube.com/@revivemii">YouTube</a></p>
+  </footer>
+
+</body>
+</html>

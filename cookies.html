@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie and LocalStorage Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .storage-list {
+            margin-top: 20px;
+        }
+        .storage-item {
+            margin-bottom: 10px;
+        }
+        button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Cookie and LocalStorage Manager</h1>
+    <p>Click the buttons below to delete specific cookies or localStorage items:</p>
+
+    <div class="storage-list">
+        <div class="storage-item">
+            <button onclick="deleteLocalStorageItem('cookiesAccepted')">Delete 'cookiesAccepted' from localStorage</button>
+        </div>
+    </div>
+
+    <div class="storage-list">
+        <div class="storage-item">
+            <button onclick="deleteCookie('allowAccessWii')">Delete 'allowAccessWii' cookie</button>
+        </div>
+        <div class="storage-item">
+            <button onclick="deleteCookie('allowAccess3DS')">Delete 'allowAccess3DS' cookie</button>
+        </div>
+    </div>
+
+    <script>
+        function deleteLocalStorageItem(itemName) {
+            if (localStorage.getItem(itemName)) {
+                localStorage.removeItem(itemName);
+                alert(`The item '${itemName}' has been deleted from localStorage, please reload the site with the cookie!`);
+            } else {
+                alert(`The item '${itemName}' does not exist in localStorage.`);
+            }
+        }
+
+        function deleteCookie(cookieName) {
+            document.cookie = `${cookieName}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`;
+            alert(`The cookie '${cookieName}' has been deleted! Please reload the Site with the Cookie`);
+        }
+    </script>
+
+</body>
+</html>
