@@ -9,16 +9,34 @@
   <meta name="description" content="About Page for the ReviveMii Project.">
 </head>
 <body>
-  <header>
+  <div id="loadicon" style="display:none;  width:40px; height:40px; position:absolute;top:8px;left:8px; overflow:hidden;z-index:1050;"  >
+    <script>
+    var loadingsfx = new Audio("15.wav");
+      function startloading() {
+      document.getElementById("loadicon").style.display="block";
+      setTimeout(stoploading,2000); // if page dont load past this point loader stops xD
+      loadingsfx.play();
+      loadingsfx.loop=true;
+      loadingsfx.currentTime = 0;
+  }
+  
+  function stoploading() {
+      document.getElementById("loadicon").style.display="none";
+      loadingsfx.pause();
+  }
+    </script>
+  <img src="/wiiloading.gif" style="display:flex;  width:40px; height:40px;" id="wiiring" alt="">
+  </div>
+  <header onload="stoploading();">
     <div class="logo-container">
-      <a href="index.html" class="logo" style="text-decoration: none">
+      <a  onclick="startloading();" href="index.html" class="logo" style="text-decoration: none">
         <img src="favicon.ico" alt="ReviveMii Logo" class="logo-img" style="text-decoration: none">
         <span>ReviveMii</span>
       </a>
     </div>    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="about.html">About</a>
+      <a  onclick="startloading();" href="index.html">Home</a>
+      <a  onclick="startloading();" href="projects.html">Projects</a>
+      <a  onclick="startloading();" href="about.html">About</a>
     </nav>
   </header>
 <br>
@@ -27,7 +45,7 @@
 <br>
 <br>
 <div id="cookiePopup" style="position: fixed; bottom: 0; left: 0; right: 0; background-color: #333; color: white; padding: 15px; text-align: center; font-size: 16px; z-index: 1000; display: none;">
-    This website uses cookies. <a href="/wc.html" style="color: blue; text-decoration: underline">What Cookies</a> 
+    This website uses cookies. <a  href="/wc.html" style="color: blue; text-decoration: underline">What Cookies</a> 
     <button onclick="acceptCookies()" style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; cursor: pointer; font-size: 14px; margin-left: 20px;">Accept</button>
 </div>
 
@@ -43,22 +61,22 @@
 </script>
   <section class="about">
     <div class="container">
-      <h1>About ReviveMii</h1>
+      <h1 onclick="startloading();">About ReviveMii</h1>
       <p>ReviveMii is a Nintendo Revival Project</p>
 <br>
 <br>
 <br>
-<a href="/projects.html" class="cta">Projects and Services</a>
+<a href="/projects.html"  onclick="startloading();" class="cta">Projects and Services</a>
     </div>
   </section>
 
   <footer>
     <p>© 2024 ReviveMii. All Rights Reserved.</p>
-    <p><a href="/index.html#end">More Links in Home Footer</a><p>
-    <p><a href="contact.html">Contact Us</a></p> 
-    <p><a href="/discord-redirect.html">Join Discord</a></p>
-    <p><a href="https://github.com/ReviveMii/">GitHub</a></p>
-    <p><a href="https://youtube.com/@ReviveMii-Project">YouTube</a></p>
+    <p  onclick="startloading();"><a href="/index.html#end">More Links in Home Footer</a><p>
+    <p  onclick="startloading();"><a href="contact.html">Contact Us</a></p> 
+    <p  onclick="startloading();"><a href="/discord-redirect.html">Join Discord</a></p>
+    <p  onclick="startloading();"><a href="https://github.com/ReviveMii/">GitHub</a></p>
+    <p  onclick="startloading();"><a href="https://youtube.com/@ReviveMii-Project">YouTube</a></p>
   </footer>
 </body>
 </html>
