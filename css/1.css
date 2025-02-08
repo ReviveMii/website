@@ -40,9 +40,11 @@ header .logo-container {
 }
 
 header .logo-img {
-  width: 25px;
+  width: 25px; 
+  max-width: 25px;
   height: auto;
   margin-right: 10px;
+  position:relative; top:5px;
 }
 
 header .logo span {
@@ -93,7 +95,7 @@ header nav a:hover {
   padding: 10px 30px;
   font-size: 1rem;
   color: #ffffff;
-  background-color: #00c2ff;
+  background-color: #34BEED;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -137,10 +139,16 @@ p {
   overflow: hidden;
   width: 90%;
   transition: transform 0.3s ease;
+  z-index:-10px;
+}
+.project-card img {
+  border-radius: 10px;
+  border:2px solid #00c2ff;
 }
 
 .project-card:hover {
   transform: translateY(-10px);
+  z-index:-10px;
 }
 
 .project-card img {

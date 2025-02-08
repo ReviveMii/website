@@ -9,7 +9,25 @@
   <meta name="description" content="Use the Nintendo Image Share again!">
 </head>
 <body>
-  <header>
+  <div id="loadicon" style="display:none;  width:40px; height:40px; position:fixed;top:8px;left:8px; overflow:hidden;z-index:1050;"  >
+    <script>
+    var loadingsfx = new Audio("/15.wav");
+      function startloading() {
+      document.getElementById("loadicon").style.display="block";
+      setTimeout(stoploading,2000); // if page dont load past this point loader stops xD
+      loadingsfx.play();
+      loadingsfx.loop=true;
+      loadingsfx.currentTime = 0;
+  }
+  
+  function stoploading() {
+      document.getElementById("loadicon").style.display="none";
+      loadingsfx.pause();
+  }
+    </script>
+  <img src="/wiiloading.gif" style="display:flex;  width:40px; height:40px;" id="wiiring" alt="">
+  </div>
+  <header onload="stoploading();">
 <div class="logo-container">
       <a href="/index.html" class="logo" style="text-decoration: none">
         <img src="/favicon.ico" alt="ReviveMii Logo" class="logo-img" style="text-decoration: none">
@@ -27,34 +45,40 @@
 <br>
 <br>
 </script>
-  <div id="popup" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background:white; padding:20px; border:2px solid #333; box-shadow:0 4px 8px rgba(0,0,0,0.1); z-index:1000; width:80%; max-width:500px;">
-  <h2>ReviveMii Image Share</h2>
-  <p>The ReviveMii Image Share is no longer being developed. Please use <a href="http://i.retrosite.org" style="color: blue">i.retrosite.org</a> or <a href="http://theimageshare.com" style="color: blue">theimageshare.com</a>.</p>
-  <button onclick="closePopup()" style="background-color:#f44336; color:white; border:none; padding:5px 10px; cursor:pointer;">Close</button>
+  <div id="popup" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background:white; padding:20px; border:2px solid #333; box-shadow:0 4px 8px rgba(0,0,0,0.1); z-index:1000; width:80%; max-width:500px; text-align:center;">
+  <h2 style="color:#323232; border-bottom:2px solid #323232; margin-bottom:3px; text-align:center;">ReviveMii Image Share</h2>
+  <p  style="text-align:center; color: #b0b0b0; border-bottom:2px solid #323232;">The ReviveMii Image Share service is no longer being developed. <br> Please use <a href="http://i.retrosite.org" style="color: blue"  target="_blank">i.retrosite.org</a> or <a href="http://theimageshare.com" style="color: blue" target="_blank">theimageshare.com</a>.</p>
+  <button onclick="closePopup()" style=" background-color:#f44336; color:white; border:none; padding:5px 10px; cursor:pointer; ">Close</button>
 </div>
-<div id="overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:999;"></div>
+<div id="overlay" style="opacity:0%; display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:999; transition:.3s ease-in-out;"></div>
 
 <script>
   window.onload = function() {
     setTimeout(function() {
       document.getElementById('popup').style.display = 'block';
+      var err3ds = new Audio("/imageshare/error.mp3");
+      err3ds.play();
       document.getElementById('overlay').style.display = 'block';
-    }, 1000);
+      document.getElementById('overlay').style.opacity="100%";
+    }, 800);
   };
 
   function closePopup() {
     document.getElementById('popup').style.display = 'none';
+    var err3ds2 = new Audio("/imageshare/closeerror.mp3");
+    err3ds2.play();
     document.getElementById('overlay').style.display = 'none';
+    document.getElementById('overlay').style.opacity="0%";
   }
 </script>
-  <section class="project-hero" id="p">
+  <section class="project-hero" id="p" style="margin-bottom:-34px;">
     <div class="container">
       <h1>ReviveMii Image Transfer</h1>
       <p>A Revival for the Nintendo Image Share on 3ds and Wii U</p>
       <button class="cta" onclick="location.href='#p'">Learn More</button>
     </div>
   </section>
-
+  <hr style=" position:relative; top:20px; width:95%; margin:auto;">
   <section class="project-details">
     <div class="container">
       <div class="project-description">
@@ -76,17 +100,18 @@
 <li>• 3. Scan the QR Code with your Smart Phone or type the URL in your Computer</li>
 <li>• 4. Download it</li>
 </ul>
-<h1 style="color: green">You now successfully transferred an Image from your Wii U/3DS to your Device!</h1>
+<hr style="margin-top:5px;">
+<h1 style="color: green; text-align:center;">You now successfully transferred an Image from your Wii U/3DS to your Device!</h1>
       </div>
     </div>
   </section>
   <footer>
     <p>© 2024 ReviveMii.</p>
-<p><a href="/index.html#end">More Links in Home Footer</a><p>
-    <p><a href="/contact.html">Contact Us</a></p>  <p><a href="/feedback.html">Feedback</a></p>
-    <p><a href="/discord-redirect.html">Join Discord</a></p>
-    <p><a href="https://github.com/ReviveMii/">GitHub</a></p>
-    <p><a href="https://youtube.com/@revivemii">YouTube</a></p>
+<p onclick="startloading();"><a href="/index.html#end">More Links in Home Footer</a><p>
+    <p onclick="startloading();"><a href="/contact.html">Contact Us</a></p>  <p><a href="/feedback.html">Feedback</a></p>
+    <p onclick="startloading();"><a href="/discord-redirect.html">Join Discord</a></p>
+    <p onclick="startloading();"><a href="https://github.com/ReviveMii/">GitHub</a></p>
+    <p onclick="startloading();"><a href="https://youtube.com/@revivemii">YouTube</a></p>
   </footer>
 
 </body>
