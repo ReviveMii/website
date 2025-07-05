@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1MVYJRKPK2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-1MVYJRKPK2');
+  </script>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RiiviveTube | A Revival for the Wii YouTube Channel! | ReviveMii</title>
+  <link rel="stylesheet" href="/css/1.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <meta name="description" content="Watch YouTube Videos on your Wii in the YouTube Channel!">
+  <audio src="/revivetube/revivetubechannel.mp3" autoplay="" preload></audio>
+</head>
+<body>
+  <div id="loadicon" style="display:none;  width:40px; height:40px; position:fixed;top:8px;left:8px; overflow:hidden;z-index:1050;"  >
+    <script>
+    var loadingsfx = new Audio("/15.wav");
+      function startloading() {
+      document.getElementById("loadicon").style.display="block";
+      setTimeout(stoploading,2000); // if page dont load past this point loader stops xD
+      loadingsfx.play();
+      loadingsfx.loop=true;
+      loadingsfx.currentTime = 0;
+  }
+  
+  function stoploading() {
+      document.getElementById("loadicon").style.display="none";
+      loadingsfx.pause();
+  }
+    </script>
+  <img src="/wiiloading.gif" style="display:flex;  width:40px; height:40px;" id="wiiring" alt="">
+  </div>
+  <header onload="stoploading();">
+<div class="logo-container">
+      <a   onclick="startloading();" href="/index.html" class="logo" style="text-decoration: none">
+        <img src="/favicon.ico" alt="ReviveMii Logo" class="logo-img" style="text-decoration: none">
+        <span>ReviveMii</span>
+      </a>
+    </div>    <nav>
+      <a   onclick="startloading();"href="/index.html">Home</a>
+      <a   onclick="startloading();"href="/projects.html">Projects</a>
+      <a   onclick="startloading();"href="/about.html">About</a>
+    </nav>
+  </header>
+<br>
+<br>
+<br>
+<br>
+</script>
+<div id="cookiePopup" style="position: fixed; bottom: 0; left: 0; right: 0; background-color: #333; color: white; padding: 15px; text-align: center; font-size: 16px; z-index: 1000; display: none;">
+    This website uses cookies. <a href="/wc.html" style="color: blue; text-decoration: underline">What Cookies</a> 
+    <button onclick="acceptCookies()" style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; cursor: pointer; font-size: 14px; margin-left: 20px;">Accept</button>
+</div>
+  <section class="project-hero" id="p" style="margin-bottom:-34px; ">
+    <div class="container">
+      <h1>RiiviveTube</h1>
+      <p>A Revival for the Wii Youtube Channel</p>
+      <button class="cta" onclick="location.href='#p'">Learn More</button>
+    </div>
+  </section>
+<hr style=" position:relative; top:20px; width:95%; margin:auto;">
+  <section class="project-details" >
+    <div class="container">
+      <div class="project-description">
+        <h2>About the Project</h2>
+<p>Watch YouTube Videos on the Wii YouTube Channel!</p>
+      </div>
+
+      <div class="project-features">
+        <h2>How to setup</h2>
+        <ul>
+<p>Requirements</p>
+<li>• A Computer </li>
+<li>• A modded Wii</li>
+<!-- span style="color:#919191; font-size:14px;">(Info for Dolphin Users: The Loading Screen for ReviveTube is not working on Dolphin, i don't know why)</span -->
+</ul><br>
+<ul>
+<li>• 1. Download the WAD <a href="http://new.old.errexe.xyz/pal.wad">PAL WAD</a><a href="http://new.old.errexe.xyz/usa.wad">USA WAD</a></li>
+<li>• 2. Install the WAD with a Wad Manager</li>
+<li><strong style="color:#ff4a4a;">Videos may take a long time to load. Try using shorter videos. If the channel randomly skips to a new video, try going back to the previous one — it should work then.</strong></li>
+</ul>
+<hr style="margin-top:5px;">
+<h1 style="color: green; text-align:center;">Have fun with RiiviveTube!</h1>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>© 2025 ReviveMii</p>
+    <p  onclick="startloading();"><a href="/index.html#end">More Links in Home Footer</a><p>
+    <p  onclick="startloading();"><a href="/contact.html">Contact Us</a></p>
+    <p  onclick="startloading();"><a href="/discord-redirect.html">Join Discord</a></p>
+    <p  onclick="startloading();"><a href="https://github.com/ReviveMii/">GitHub</a></p>
+    <p  onclick="startloading();"><a href="https://youtube.com/@ReviveMii-Project">YouTube</a></p>
+  </footer>
+
+</body>
+</html>
