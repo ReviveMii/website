@@ -31,6 +31,11 @@
       <priority>1.0</priority>
    </url>
    <url>
+      <loc>https://revivemii.xyz/riivivetube</loc>
+      <changefreq>monthly</changefreq>
+      <priority>1.0</priority>
+   </url>
+   <url>
       <loc>https://revivemii.xyz/status</loc>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
