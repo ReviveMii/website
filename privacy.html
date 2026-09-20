@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | ReviveMii</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <meta name="robots" content="noindex,follow">
+  <script src="/assets/js/main.js" defer></script>
+  <style>
+    .legal { max-width: 860px; }
+    .legal h2 { margin-top: 36px; font-size: 1.6rem; }
+    .legal h3 { margin-top: 22px; font-size: 1.2rem; }
+    .legal p, .legal li { font-size: 1rem; color: #b0b0b0; line-height: 1.7; }
+    .legal ul { list-style: disc; padding-left: 1.4em; margin-bottom: 20px; }
+    .legal li { margin-bottom: 8px; }
+    .legal .ph { color: #ffd54a; }
+    .legal button.link { background: none; border: none; color: #00c2ff; font: inherit; cursor: pointer; padding: 0; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div id="loadicon" style="display:none; width:40px; height:40px; position:fixed; top:8px; left:8px; overflow:hidden; z-index:1050;">
+    <img src="/assets/wiiloading.gif" style="display:flex; width:40px; height:40px;" id="wiiring" alt="">
+  </div>
+  <header>
+    <a onclick="startloading();" href="/index.html" class="logo">
+      <img src="/favicon.ico" alt="ReviveMii Logo" class="logo-img">
+      <span>ReviveMii</span>
+    </a>
+    <nav>
+      <a onclick="startloading();" href="/index.html">Home</a>
+      <a onclick="startloading();" href="/projects.html">Projects</a>
+      <a onclick="startloading();" href="/about.html">About</a>
+    </nav>
+  </header>
+
+  <section>
+    <div class="container legal">
+      <h1>Privacy Policy</h1>
+      <p>Last updated: 20 September 2026.</p>
+
+      <h2>1. Controller</h2>
+      <p>TheErrorExe<br>Email: theerrorexe@tutanota.com</p>
+      <p>This policy covers the website revivemii.xyz and the project's server services, in particular RiiviveTube, which revives the YouTube channel on the Nintendo Wii.</p>
+
+      <h2>2. Server log files</h2>
+      <p>Whenever you visit our website or use our servers, our web server processes technically necessary data: IP address, date and time, requested URL, HTTP status code, amount of data transferred, and browser or device identifier (user agent). We do not log query strings, so that access tokens from the YouTube login do not end up in logs.</p>
+      <p>The purpose is secure and stable operation (error analysis, abuse and attack prevention). Log files are deleted after 7 days.</p>
+      <p>For rate limiting, your IP address is also held briefly in memory. <strong>It is not stored permanently.</strong></p>
+
+      <h3>Content delivery network and security (Cloudflare)</h3>
+      <p>Our website and servers (including RiiviveTube) are served through Cloudflare. Cloudflare acts as a reverse proxy and CDN: your requests first pass through Cloudflare's servers and are forwarded from there to our server. In doing so, Cloudflare processes your IP address, request headers, the requested URL, and the time of the request. <a href="https://www.cloudflare.com/policies/privacy/" onclick="startloading();">Cloudflare's Privacy Policy</a></p>
+
+      <h2>3. RiiviveTube (Wii YouTube Channel)</h2>
+      <h3>What we process</h3>
+      <p>The YouTube channel on the Wii sends requests to our server, for example for video lists, search terms, search suggestions, video information, and videos. This includes video IDs, search terms, language, country, and device type (vendor/model). We have no user accounts and do not store search histories.</p>
+      <h3>Sharing with YouTube / Google</h3>
+      <p>We retrieve data from YouTube on behalf of your Wii (search, suggestions, video metadata, video files, channel images). For this, search terms and video IDs are sent to Google. Google sees our server's IP address, not yours. However, your Wii loads some thumbnails directly from Google's servers, so Google does receive your IP address in that case. The recipient is Google Ireland Limited or Google LLC (USA). <a href="https://policies.google.com/privacy" onclick="startloading();">Google's own privacy policy also applies.</a></p>
+      <h3>Video cache</h3>
+      <p>Requested videos are converted on our server into a Wii-compatible format and cached under the video ID as the file name, so they do not have to be converted repeatedly. The cache contains no information about users. Temporary files are deleted after conversion.</p>
+      <h3>Optional YouTube login</h3>
+      <p>If you sign in within the channel, the login uses Google's device sign-in flow. Our server passes the login requests (including the device identifier) and access tokens on to Google in order to fetch your lists (Watch Later, Favorites, History, account info). <strong>We do not store the tokens.</strong></p>
+      <h3>Error notifications</h3>
+      <p>If a video download fails, we send the video ID and the technical error message to a private Discord channel of the project. No user data is transmitted.</p>
+
+      <h2>4. Website</h2>
+      <h3>Browser storage (Local Storage)</h3>
+      <p>We store the entry <code>cookiesAccepted</code> in your browser to remember your choice on the cookie notice. It is technically necessary and contains no personal data.</p>
+      <h3>Analytics with Matomo</h3>
+      <p>We use Matomo, self-hosted at analyzemii.revivemii.xyz. Matomo runs without cookies, and the IP address is truncated (anonymized) before storage. We record pages visited, referrer, browser, operating system, and screen resolution. The data does not leave our servers. You can object at any time: <a href="/matomo-opt-out.html" onclick="startloading();">Matomo Opt-Out</a></p>
+      <h3>Google Analytics (consent only)</h3>
+      <p>Only if you click "Accept" in the notice do we load Google Analytics (Google Ireland Limited). Google may transfer data to the USA and store information on your device. You can withdraw your consent at any time with effect for the future: <button class="link" onclick="localStorage.removeItem('cookiesAccepted'); location.reload(); startloading();">Reset consent</button></p>
+      <h3>Discord widget</h3>
+      <p>The home page embeds a widget from Discord. Your IP address and browser data are then transmitted to Discord Inc. (USA), and Discord may store information on your device.</p>
+      <h3>External resources</h3>
+      <p>The RiiviveTube page loads jQuery from code.jquery.com, which gives that provider your IP address.</p>
+      <h3>Links</h3>
+      <p>Links to GitHub, YouTube, and Discord only transmit data to those providers once you click. Their privacy policies then apply.</p>
+
+      <h2>5. Legal bases</h2>
+      <ul>
+        <li><strong>Server log files, rate limiting, Cloudflare, error notifications, jQuery and other external resources:</strong> Art. 6(1)(f) GDPR (legitimate interest in secure, stable, and fast operation of our services).</li>
+        <li><strong>RiiviveTube features you request (search, video playback, YouTube login):</strong> Art. 6(1)(b) GDPR (providing the function you requested), and otherwise Art. 6(1)(f) GDPR.</li>
+        <li><strong>Matomo:</strong> Art. 6(1)(f) GDPR (legitimate interest in improving our offering).</li>
+        <li><strong>Google Analytics:</strong> Art. 6(1)(a) GDPR and § 25(1) TDDDG (your consent).</li>
+        <li><strong>Local Storage entry:</strong> § 25(2) no. 2 TDDDG (technically necessary); it contains no personal data.</li>
+      </ul>
+
+      <h2>6. Your rights</h2>
+      <p>You have the right of access, rectification, erasure, restriction of processing, data portability, and to object to processing. You can withdraw any consent at any time; this does not affect the lawfulness of processing carried out before withdrawal. To exercise your rights, write to the email address above.</p>
+
+      <h2>7. Other</h2>
+      <p>Providing your data is neither legally nor contractually required, but without the technically necessary data the service cannot be used. <strong>ReviveMii is not affiliated with Nintendo, YouTube, or Google.</strong></p>
+      <p>We will update this policy when our services or the legal situation change.</p>
+    </div>
+  </section>
+
+  <div id="cookiePopup" style="position: fixed; bottom: 0; left: 0; right: 0; background-color: #333; color: white; padding: 15px; text-align: center; font-size: 16px; z-index: 1000; display: none;">
+    This website uses cookies.
+    <button onclick="acceptCookies()" style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; cursor: pointer; font-size: 14px; margin-left: 20px;">Accept</button>
+  </div>
+
+  <footer>
+    <p>© 2026 ReviveMii</p>
+    <p onclick="startloading();"> <a href="/privacy.html">Privacy Policy</a></p>
+    <p onclick="startloading();"><a href="/discord">Join Discord</a></p>
+    <p onclick="startloading();"><a href="https://github.com/ReviveMii">GitHub</a></p>
+    <p onclick="startloading();"><a href="https://www.youtube.com/@ReviveMii">YouTube</a></p>
+  </footer>
+  <script src="https://assetscdn.revivemii.xyz/misc/wii/cursor.js"></script>
+</body>
+</html>
