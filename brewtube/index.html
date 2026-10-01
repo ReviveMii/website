@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrewTube | YouTube on Wii Homebrew! | ReviveMii</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <meta name="description" content="Watch YouTube Videos on your Wii with Homebrew!">
+</head>
+<body>
+  <div id="loadicon" style="display:none;  width:40px; height:40px; position:fixed;top:8px;left:8px; overflow:hidden;z-index:1050;"  >
+  <img src="/assets/wiiloading.gif" style="display:flex;  width:40px; height:40px;" id="wiiring" alt="">
+  </div>
+  <header onload="stoploading();">
+<div class="logo-container">
+      <a   onclick="startloading();" href="/index.html" class="logo" style="text-decoration: none">
+        <img src="/favicon.ico" alt="ReviveMii Logo" class="logo-img" style="text-decoration: none">
+        <span>ReviveMii</span>
+      </a>
+    </div>    <nav>
+      <a   onclick="startloading();"href="/index.html">Home</a>
+      <a   onclick="startloading();"href="/projects.html">Projects</a>
+      <a   onclick="startloading();"href="/about.html">About</a>
+    </nav>
+  </header>
+<br>
+<br>
+<br>
+<br>
+</script>
+<div id="cookiePopup" style="position: fixed; bottom: 0; left: 0; right: 0; background-color: #333; color: white; padding: 15px; text-align: center; font-size: 16px; z-index: 1000; display: none;">
+    This website uses cookies.
+    <button onclick="acceptCookies()" style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; cursor: pointer; font-size: 14px; margin-left: 20px;">Accept</button>
+</div>
+  <section class="project-hero" id="p" style="margin-bottom:-34px; ">
+    <div class="container">
+      <h1>BrewTube</h1>
+      <p>Wii Homebrew app to watch YouTube videos on</p>
+      <br>
+      <br>
+      <strong style="color:#ff4a4a; font-size: 200%">WARNING: THIS IS STILL IN EARLY DEVELOPMENT</strong>
+
+    </div>
+  </section>
+<hr style=" position:relative; top:20px; width:95%; margin:auto;">
+  <section class="project-details" >
+    <div class="container">
+      <div class="project-description">
+        <h2>About the Project</h2>
+        <p>With BrewTube you can watch YouTube videos on the Wii, using the Homebrew channel.</p>
+      </div>
+
+      <div class="project-features">
+        <h2>How to setup</h2>
+        <ul>
+<p>Requirements</p>
+<li>• A computer with either a USB or an SD card.</li>
+<li>• A modded Wii (with Homebrew) <a href="https://wii.guide/" target="_blank" style="color: blue;">Mod your Wii here</a></li>
+
+</ul><br>
+<ul>
+<li>• 1. Download the latest version of BrewTube from the <a href="https://github.com/ReviveMii/brewtube" target="_blank" style="color: blue;">GitHub</a></li>
+<li>• 2. Extract and move the apps folder to the root of your USB or SD card.</li>
+<li>• 3. Plug in your SD card or USB to the Wii and launch the Homebrew channel.</li>
+<li>• 4. Launch the BrewTube app.</li>
+</ul>
+<hr style="margin-top:5px;">
+<p style="margin-top:10px;"><strong style="color:#ff4a4a;">Join the <a href="https://revivemii.xyz/discord" target="_blank" style="color: blue;">discord</a> to report bugs</strong></p>
+<p style="margin-top:10px;">Privacy Policy: <a href="/privacy.html" target="_blank" onclick="startloading();">here</a></p>
+<iframe style="margin-top:10px" src="https://discord.com/widget?id=1302694379299016764&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>© 2026 ReviveMii</p>
+    <p  onclick="startloading();"> <a href="/privacy.html">Privacy Policy</a></p>
+    <p  onclick="startloading();"><a href="/discord">Discord</a></p>
+    <p  onclick="startloading();"><a href="https://github.com/ReviveMii">GitHub</a></p>
+    <p  onclick="startloading();"><a href="https://www.youtube.com/@ReviveMii">YouTube</a></p>
+  </footer>
+
+<script src="https://assetscdn.revivemii.xyz/misc/wii/cursor.js"></script>
+<script src="/assets/js/main.js" defer></script>
+
+</body>
+</html>
